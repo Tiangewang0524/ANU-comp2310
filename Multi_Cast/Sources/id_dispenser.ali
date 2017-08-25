@@ -1,0 +1,22 @@
+V "GNAT Lib v4.9"
+P ZX
+
+RN
+RV NO_PROTECTED_TYPES
+RV SPARK_05
+
+U id_dispenser%b	id_dispenser.adb	101eeb66 NE OO PK GE
+
+U id_dispenser%s	id_dispenser.ads	efa95442 BN EE NE OO PK GE
+
+D id_dispenser.ads	20150814012000 efa95442
+D id_dispenser.adb	20150814012255 ffb7bf24
+D system.ads		20120723080122 f2f2d889
+X 1 id_dispenser.ads
+4E9 Element 9r35 11r17 11r28 2|6r35 11r21
+6k9*Id_Dispenser 4z9 14l5 14e17 2|2b14 17l5 17t17
+8w14*Dispenser 2|4b19 15l8 15t17
+9U17 Draw_Id 9<26 2|6b17 13l11 13t18
+9*26 Id{4E9} 2|6b26 9m10
+11*7 counter{4E9} 2|9r16 11m10 11r35
+

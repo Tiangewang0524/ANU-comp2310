@@ -1,0 +1,147 @@
+V "GNAT Lib v4.9"
+M P W=b
+P SS ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_DYNAMIC_CODE
+RV NO_IMPLICIT_LOOPS
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_REQUEUE_STATEMENTS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=5
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U multi_cast%b		multi_cast.adb		99c40d6c NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W id_dispenser%s	id_dispenser.adb	id_dispenser.ali
+W interfaces%s		interfac.ads		interfac.ali
+W message_server%s	message_server.adb	message_server.ali
+W system%s		system.ads		system.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-reatim.ads		20090409150019 63f07669
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D id_dispenser.ads	20150814012000 efa95442
+D id_dispenser.adb	20150814012255 ffb7bf24
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D i-cstrea.ads		20130412125801 8128536b
+D message_server.ads	20150815042723 0b2f491c
+D message_server.adb	20150815042902 34b3993c
+D multi_cast.adb	20150815042832 452fe5e6
+D system.ads		20120723080122 f2f2d889
+D s-atacco.ads		20120515093410 4c36d12f
+D s-conca4.ads		20140225151544 7e642b20
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-imenne.ads		20140225151139 614c06c0
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20141020173929 8d5d3604
+D s-osinte.ads		20111123112448 a671a606
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-tasinf.ads		20090409150019 e120e23a
+D s-taspri.ads		20110927094500 15f617a8
+D s-taprop.ads		20111212143339 1dd2e1b6
+D s-taskin.ads		20140131154341 3f821f32
+D s-taprob.ads		20110927094500 502249e3
+D s-tpoben.ads		20121029113218 b641f948
+D s-tpobop.ads		20090409150019 5f548bb3
+D s-tassta.ads		20121029110946 70812003
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-wchcon.ads		20140225151139 1b7d22d2
+X 1 ada.ads
+16K9*Ada 19e8 17|1r6 1r26
+X 8 a-textio.ads
+49K13*Text_IO 471e16 17|1w10 1r30
+263U14*Put_Line 17|31s10
+X 10 id_dispenser.ads
+4E9 Element 17|7r52
+6k9*Id_Dispenser 14e17 17|2w6 7r38
+8w14 Dispenser 17|27r26[7]
+9U17 Draw_Id 17|27s36[7]
+X 15 message_server.ads
+2+9 Message 17|13r49
+3i4 Postboxes{positive} 17|14r49
+5k9*Message_Server 27e19 17|3w6 13r33
+7I12 Box{positive} 17|19r21[13] 24r14[13] 31r29[13]
+8A9 Boxes(7I12[17|13])<integer> 17|53r29[13]
+15w14 Post_Office 17|30r10[13] 37r4[13] 45r10[13] 55r7[13] 56r7[13]
+17U17 Send 17|45s22[13] 56s19[13]
+18Y17 Multicast 17|55s19[13]
+19Y17 Broadcast 17|37s16[13]
+20Y17 Receive 17|30r22[13]
+X 17 multi_cast.adb
+5U11*Multi_Cast 5b11 59l5 59t15
+7K12 Positive_Dispenser[10|6] 27r7
+9i4 Number_Of_Tasks{positive} 14r62
+11E9 Colour 11e60 13r62 23r14 31r62 42r15 42r25 46r19
+11n20 Red{11E9}
+11n25 Green{11E9}
+11n32 Blue{11E9}
+11n38 Yellow{11E9} 56r42
+11n46 Magenta{11E9} 55r42
+11n55 Cyan{11E9} 37r27
+13K12 Colour_Server[15|5] 15r8
+17T14 Client 19r29 21b14 33l8 33t14
+19a4 Clients(17T14) 44r16
+23e7 Data{11E9} 30m36 31r76
+24i7 Id{15|7I12[13]} 27m45 30r31 31r40
+29i11 i{integer}
+42e7 Paint{11E9} 45r31 46m10 46r32
+44i11 i{integer} 45r28
+53a7 Recipients{15|8A9[13]} 55r30
+X 36 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

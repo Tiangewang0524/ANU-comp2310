@@ -1,0 +1,78 @@
+V "GNAT Lib v4.9"
+P ZX
+
+RN
+RV SIMPLE_BARRIERS
+RV NO_PROTECTED_TYPES
+RV NO_REQUEUE_STATEMENTS
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=2+
+
+U message_server%b	message_server.adb	3f9cd020 NE OO PK GE
+
+U message_server%s	message_server.ads	0b2f491c BN EE NE OO PK GE
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D message_server.ads	20150815042723 0b2f491c
+D message_server.adb	20150815042902 34b3993c
+D system.ads		20120723080122 f2f2d889
+D s-atacco.ads		20120515093410 4c36d12f
+D s-exctab.ads		20140225151139 54135002
+D s-multip.ads		20101011073009 38ac9f73
+D s-oscons.ads		20141020173929 8d5d3604
+D s-osinte.ads		20111123112448 a671a606
+D s-parame.ads		20140225151139 ab8cb46a
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stausa.ads		20110804134155 017a0a05
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-tasinf.ads		20090409150019 e120e23a
+D s-taspri.ads		20110927094500 15f617a8
+D s-taskin.ads		20140131154341 3f821f32
+D s-taprob.ads		20110927094500 502249e3
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+X 6 message_server.ads
+2+9 Message 11r19 17r51 18r51 19r51 20r51 7|5r40 10r43 22r31 30r48
+3i4 Postboxes{positive} 7r44
+5k9*Message_Server 2z9 3z4 27l5 27e19 7|1b14 38l5 38t19
+7I12*Box{positive} 8r53 13r32 17r33 20r33 7|5r28 23r30 25r19 30r31
+8A9*Boxes(7I12)<integer> 18r33 7|10r29
+9R9*Box_Content 12e14 13r40
+10b7 Available{boolean} 7|7m25 12r57 23r50 30r72 32m20
+11*7 Data{2+9} 7|7m44 33r43
+13A9*Box_Contents(9R9)<integer> 23r25
+15w14*Post_Office 7|3b19 37l8 37t19
+17U17 Send 17>28 17>40 7|5b17 8l11 8t15 17s19 26s13
+17i28 To{7I12} 7|5b23 7r17
+17*40 Data{2+9} 7|5b33 7r52
+18Y17 Multicast 18>28 18>40 7|10b13 14r23 20l11 20t20
+18a28 To{8A9} 7|12r29 12r49 16r24 17r25
+18*40 Data{2+9} 7|17r33
+19Y17 Broadcast 19>40 7|22b13 28l11 28t20
+19*40 Data{2+9} 7|26r22
+20Y17 Receive 20<40 7|30b13 32r33 35l11 35t18
+20*40 Data{2+9} 7|33m10
+23a7 Store{13A9} 7|7m10 12r41 23r41 30r62 32m10 33r33
+24b7 Check_Multicast{boolean} 7|10r57 13m15 34m10
+X 7 message_server.adb
+10a24 To{6|8A9}
+10*36 Data{6|2+9}
+12i24 i{integer} 12r53
+16i19 B{integer} 17r29
+22*24 Data{6|2+9}
+23i25 B{6|7I12} 23r47
+25i14 B{6|7I12} 26r19
+30i26 B 30r69 32r17 32r42 33r40
+30*37 Data{6|2+9}
+X 17 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

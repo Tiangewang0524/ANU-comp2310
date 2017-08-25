@@ -1,0 +1,65 @@
+project Multi_Cast is
+
+   for Main use ("multi_cast.adb");
+   for Source_Dirs use ("Sources");
+   for Object_Dir use "Objects/";
+   for Exec_Dir use "Executables/";
+   type Specific_Build_Modes_Type is
+      ("Production", "Development", "Performance");
+   Specific_Build_Modes : Specific_Build_Modes_Type := external ("Specific_build_modes", "Development");
+
+   package Compiler is
+
+      case Specific_Build_Modes is
+
+         when "Production" =>
+            for Default_Switches ("ada") use ("-gnatVarpmifedcO", "-gnatw.a.bc.cdfgh.hi.ijk.kl.lm.m.no.op.pqr.r.st.tu.uv.vw.wx.xyz", "-gnat12", "-gnatyaAbBcCehfiklnOprStux", "-gnato", "-fstack-check", "-gnatE", "-gnata", "-O2", "-gnatn", 
+               "-funroll-loops");
+
+         when "Development" =>
+            for Default_Switches ("ada") use ("-gnatVarpmifedcO", "-gnatw.a.bc.cdfgh.hi.ijk.kl.lm.m.no.op.pqr.r.st.tu.uv.vw.wx.xyz", "-gnat12", "-gnatyaAbBcCehfiklnOprStux", "-gnato", "-fstack-check", "-gnatE", "-gnata", "-g");
+
+         when "Performance" =>
+            for Default_Switches ("ada") use ("-gnatVn", "-gnatw.a.bc.cdfgh.hi.ijk.kl.lm.m.no.op.pqr.r.st.tu.uv.vw.wx.xyz", "-gnat12", "-gnatyaAbBcCehfiklnOprStux", "-gnatn", "-funroll-loops", "-O3");
+      end case;
+   end Compiler;
+
+   package Builder is
+
+      case Specific_Build_Modes is
+
+         when "Production" =>
+            for Default_Switches ("ada") use ("-s", "-m");
+
+         when "Development" =>
+            for Default_Switches ("ada") use ("-s", "-m", "-g");
+
+         when "Performance" =>
+            for Default_Switches ("ada") use ("-s", "-m");
+      end case;
+   end Builder;
+
+   package Ide is
+      for Documentation_Dir use "Documentation";
+   end Ide;
+
+   package Pretty_Printer is
+      for Default_Switches ("ada") use ("-l3");
+   end Pretty_Printer;
+
+   package Linker is
+
+      case Specific_Build_Modes is
+
+         when "Production" =>
+
+         when "Development" =>
+            for Default_Switches ("ada") use ("-g");
+
+         when "Performance" =>
+
+      end case;
+   end Linker;
+   
+end Multi_Cast;
+
