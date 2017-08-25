@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file>/Users/Freddie/Documents/ANU/2310/lab/default.gpr</vfs_file>
+    <file_marker column=" 1" line=" 15" >
+      <vfs_project />
+      <vfs_file>/Users/Freddie/Desktop/test_ada/Pipe.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/Freddie/Documents/ANU/2310/lab/default.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 15" >
+      <vfs_project />
+      <vfs_file>/Users/Freddie/Desktop/test_ada/Pipe.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 9" line=" 1" >
+      <vfs_project />
+      <vfs_file>/Users/Freddie/Documents/ANU/2310/lab/default.gpr</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
